@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fbf1a110b7554bbbbfab74f7bdd8d24f" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.BangLuong" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.BangThuePhong" Width="1.5" PointX="8.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.BoPhan" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.ChucDanh" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.CoSoVatChat" Width="1.5" PointX="6" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.DichVu" Width="1.5" PointX="10.5" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.HoaDonChi" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.HoaDonThu" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.KhachHang" Width="1.5" PointX="6" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.LoaiDichVu" Width="1.5" PointX="8.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.LoaiPhong" Width="1.5" PointX="3.75" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.Log" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.NguoiOCung" Width="1.5" PointX="10.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.NhanVien" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.Phong" Width="1.5" PointX="6" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.PhongVatTu" Width="1.5" PointX="8.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.TinhTrangPhong" Width="1.5" PointX="3.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.TrangThaiThuePhong" Width="1.5" PointX="6" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyKhachSanModel.User" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__BangLuong__TroCa__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__BangThueP__IDKha__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__BangThueP__IDTra__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__BangThueP__IDTra__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__NguoiOCun__IDNgu__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__NhanVien__IDBoPh__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__NhanVien__IDBoPh__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__CoSoVatCh__IDTin__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__PhongVatT__IDCoS__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__DichVu__KTPhucVu__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__HoaDonChi__TongT__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__HoaDonThu__IDKha__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__HoaDonThu__TongT__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__NguoiOCun__IDNgu__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__Phong__IDTinhTra__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__Users__IDNhanVie__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__Phong__IDTinhTra__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.FK__PhongVatT__IDPho__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyKhachSanModel.SuDungDichVu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

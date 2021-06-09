@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8438D82F-8865-47FC-A9D7-634E8AD96DC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLKS</RootNamespace>
+    <AssemblyName>QLKS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BangLuong.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BangThuePhong.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BoPhan.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChucDanh.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cons.cs" />
+    <Compile Include="CoSoVatChat.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DichVu.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DP.Designer.cs">
+      <DependentUpon>DP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonChi.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonThu.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiDichVu.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiPhong.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiOCung.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Phong.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhongVatTu.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachSan.Designer.cs">
+      <DependentUpon>QuanLyKhachSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeBaoCao.Designer.cs">
+      <DependentUpon>ThongKeBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TinhTrangPhong.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrangThaiThuePhong.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>QuanLyKhachSanModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DP.resx">
+      <DependentUpon>DP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhachSan.resx">
+      <DependentUpon>QuanLyKhachSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeBaoCao.resx">
+      <DependentUpon>ThongKeBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="QuanLyKhachSanModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QuanLyKhachSanModel.edmx.diagram">
+      <DependentUpon>QuanLyKhachSanModel.edmx</DependentUpon>
+    </None>
+    <None Include="Resources\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuanLyKhachSanModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanModel.Context.cs</LastGenOutput>
+      <DependentUpon>QuanLyKhachSanModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="QuanLyKhachSanModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyKhachSanModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyKhachSanModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
